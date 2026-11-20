@@ -1,0 +1,32 @@
+h1{
+color:black;
+}
+ul{
+margin: 0;
+padding: 0;
+list-style: none;
+height: 40px;
+line-height: 40px;
+background-color: #A13554;
+font-family: Gerogia, serif;
+font-size: 16px;
+}
+li{
+float: left;
+border-right: 1px solid #EDC9D4;
+}
+a{
+display: block;
+padding: 0 28px;
+color: #fff;
+text-decoration: none;
+}
+a:hover{
+background-color: #AC82C2;
+}
+body{
+margin: 0;
+padding: 0;
+background-color: #FEF6E7;
+}
+

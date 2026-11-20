@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/css/shopreg.css">
+</head>
+<body>
+<a href="/third/"></a>
+     <ul>
+            <!-- Update the href attributes like this: -->
+            <li><a href="{% url 'first' %}">Home</a></li>
+            <li><a href="{% url 'second' %}">Registration</a></li>
+            <li><a href="{% url 'third' %}">Gallary</a></li>
+            <li><a href="{% url 'fourth' %}">Contact us</a></li>
+    </ul>
+<center><h1>Shop Registration</h1>
+<div class="center-container">
+<form action="" method="POST" novalidate>
+    {%csrf_token%}
+    {{form.as_p}}
+    <input type="submit" value="Submit">
+</form></center>
+</div>
+
+</body>
+</html>

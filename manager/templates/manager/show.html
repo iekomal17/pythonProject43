@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+table, td, th {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+}
+</style>
+</head>
+<body>
+<table border="1">
+    <tr><th>Shop Name</th>
+        <th>Owner Name</th>
+        <th>Shop Category</th>
+        <th>Shop No</th>
+        <th>License</th>
+    </tr>
+    {%for v in registration%}
+
+    <tr>
+        <td>{{v.shopname}}</td>
+        <td>{{v.ownername}}</td>
+        <td>{{v.shopcategory}}</td>
+        <td>{{v.shopregno}}</td>
+        <td>{{v.license}}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
